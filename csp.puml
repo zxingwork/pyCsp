@@ -1,0 +1,7 @@
+@startuml
+class Dummy {
+  String data
+  void methods()
+}
+
+@enduml

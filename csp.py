@@ -43,7 +43,7 @@ class CSP(Generic[V, D]):
         if assignment is None:
             assignment = {}
 
-        if len(assignment) == self.constraints:
+        if len(assignment) == len(self.variables):
             return assignment
 
         unsigned: List[V] = [i for i in self.variables if i not in assignment]
